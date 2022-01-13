@@ -22,3 +22,5 @@ async def selecting_server(client: CloudBot, message: CallbackQuery) -> None:
         await upload_handler(client, message, callback_data)
     elif callback_data.startswith('tninja'):
         await upload_handler(client, message, callback_data
+    elif callback_data.startswith('bayfiles'):
+        await upload_handler(client, message, callback_data
