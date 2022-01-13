@@ -16,5 +16,7 @@ async def selecting_server(client: CloudBot, message: CallbackQuery) -> None:
         await upload_handler(client, message, callback_data)
     elif callback_data.startswith('anonyfiles'):
         await upload_handler(client, message, callback_data)
-    elif callback_data.startswith('Mixdrop'):
+    elif callback_data.startswith('mixdrop'):
+        await upload_handler(client, message, callback_data)
+    elif callback_data.startswith('ufile'):
         await upload_handler(client, message, callback_data)
